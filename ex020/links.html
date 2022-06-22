@@ -11,7 +11,7 @@
             #   = id
             .   = classe
             :   = pseudo-class
-            ::  = pseudo-element
+            ::  = pseudo-element  -> Adiciona coisas (texto,imagens) na periferia de um elemento
             >   = children - filho
 
         */
@@ -43,24 +43,26 @@
         /*a classe especial terá um fundo diferente*/
         .especial{
             background-color: rgb(202, 136, 136);
-            color: black;
         }
 
         /*Antes de todos os links terá uma seta*/
         a::before{
-            content: '=>';
+            content: '⇒';
         }
 
-        /*A classe ancora (a) tem uma classe especial dentro, fazer um tramento diferente p essa classe chamada especial*/
-        .especial::before{
-            content: '*';
-        }
         a::after{
-            content: '[ link ]';
+            content: ' ⇐ [ link ]';
             text-decoration: none;
             font-weight: normal;
             color: lightgray;
         }
+
+        /*Antes de todos os links terá uma seta*/
+        /*A classe ancora (a) tem uma classe especial dentro, fazer um tramento diferente p essa classe chamada especial*/
+        .especial::before{
+            content: '*';
+        }
+
 
     </style>
 </head>
