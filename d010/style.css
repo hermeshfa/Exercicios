@@ -60,6 +60,7 @@ header > p {
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
+    padding-bottom: 10px ;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.267);
 }
 
@@ -143,19 +144,6 @@ main a:hover{
     text-decoration: underline;
     color: var(--cor4);
 }
-
-/*
-iframe{
-    display: block;
-    min-width: 300px;
-    max-width: 1000px;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-bottom: 20px ;
-    margin-left: auto;
-    padding: 10px;
-}
-*/
 
 div.video{
     background-color:var(--cor5);
