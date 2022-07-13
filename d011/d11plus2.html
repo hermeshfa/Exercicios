@@ -23,58 +23,79 @@
             padding: 10px;
             margin: 0px;
         }
-        section#esquerda{
-            height: 500px;
-            position: relative;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        #art_esqueda{
-            background-image: url('imagens/astronauta.png');
-            background-size: 100% 100%;
-            width: 500px;
-            height: 500px;
-            position: absolute;
+
+        section.esquerda{
+            height: 700px;
+            padding-bottom: 10px;
+
 
         }
-        section#esquerda > p{
+        section.esquerda#img1{
+            background-image: url('imagens/astronauta.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 15% center;
+            background-size: 25% 50%;
+
+        }
+
+        section.esquerda > p{
+
             text-align: left;
             position: relative;
             left: 50%;
             width: 50%;
+            padding: 10px;
+            text-shadow: 1px 1px 0px black;
 
         }
-        section#centro > article{
-            height: 33vh;
+
+        section.centro{
+            height: 700px;
             margin: auto;
             max-width: 900px;
-            height: 500px;
-            padding-top: 10px;
+            padding-top: 20px;
+            padding: 10px;
+
         }
-        section#direita{
-            height: 500px;
-            position: relative;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
+        section.centro > p{
+            line-height: 2.5em;
+            background-color: rgba(0,0,0,0.514);
+            text-shadow: 1px 1px 0px black;
+            padding-bottom: 10px;
         }
 
-        #art_direita{
+        section.centro#img2{
             background-image: url('imagens/astronauta.png');
-            background-size: 100% 100%;
-            width: 500px;
-            height: 500px;
-            position: absolute;
-            left: 50%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: 25% 50%;
 
-            transform: translate( 30% , 0%);
         }
-        section#direita > p{
+
+        section.direita{
+            height: 700px;
+        }
+        section.direita#img3{
+            background-image: url('imagens/astronauta.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 80% 50%;
+            background-size: 25% 50%;
+
+        }
+
+        section.direita > p{
+
             text-align: left;
             position: relative;
             width: 50%;
+            padding: 10px;
+            text-shadow: 1px 1px 0px black;
+
         }
+
 
     </style>
 </head>
@@ -82,9 +103,7 @@
     <header>
         <h1>Testando section e efeito Parallax </h1>
     </header>
-    <section id="esquerda">
-        <article id="art_esqueda">
-        </article>
+    <section class="esquerda" id="img1">
         <p>Section esquerda</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
 
@@ -95,20 +114,20 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
     </section>
-    <section id="centro">
-        <article>
-            <p>Section centro</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
-        </article>
+
+    <section class="centro" id="img2">
+
+        <p>Section centro <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis? <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis? <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis? <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis? <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis? <br>
+        </p>
+
     </section>
-    <section id="direita">
-        <article id="art_direita">
-        </article>
+
+    <section class="direita" id="img3">
         <p>Section direita</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
 
@@ -119,6 +138,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi illo iure omnis culpa aspernatur modi nam saepe, hic quas enim repellendus praesentium iusto aliquam, exercitationem quibusdam possimus eveniet quis?</p>
     </section>
+
     <footer></footer>
 </body>
 </html>

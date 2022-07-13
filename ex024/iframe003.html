@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 93vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam deserunt error distinctio hic, dolor aspernatur iste asperiores? At qui aspernatur omnis harum, vitae, aliquid deleniti provident illo voluptatem neque eaque.</p>
+    <ul>
+        <li><a href="paginas/pag001.html" target="meuframe">Primeira Página</a></li>
+        <li><a href="paginas/pag002.html" target="meuframe">Segunda Página</a></li>
+        <li><a href="paginas/pag003.html" target="meuframe">Terceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam deserunt error distinctio hic, dolor aspernatur iste asperiores? At qui aspernatur omnis harum, vitae, aliquid deleniti provident illo voluptatem neque eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem corrupti. Aut animi id aperiam reprehenderit, sunt ut maiores ipsum commodi asperiores sed esse dolorem quas, nemo eligendi beatae. Sit.</p>
+
+    <!--  Iframe inicia vazio
+    <iframe name="meuframe" src="">
+        <p>Seu navegador não é compativel</p>
+    </iframe>
+    -->
+    <!--  Iframe inicia com um conteudo default curto em html, sem ter outra pagina -->
+    <iframe name="meuframe" srcdoc="<h1>Escolha uma das opções acima.</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nostrum consectetur quos in quis aperiam aliquam error cum, iste quisquam eos culpa sint molestias ipsa. Perferendis atque necessitatibus molestias? Blanditiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis modi fugit consequatur illo provident fugiat recusandae mollitia cumque, velit pariatur amet ea quo nam laudantium perspiciatis? Quam similique facere ducimus</p><img src='imagens/cursoemvideo.png' alt='cursoemvideo'>">
+        <p>Seu navegador não é compativel</p>
+    </iframe>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nostrum consectetur quos in quis aperiam aliquam error cum, iste quisquam eos culpa sint molestias ipsa. Perferendis atque necessitatibus molestias? Blanditiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis modi fugit consequatur illo provident fugiat recusandae mollitia cumque, velit pariatur amet ea quo nam laudantium perspiciatis? Quam similique facere ducimus.</p>
+</body>
+</html>
