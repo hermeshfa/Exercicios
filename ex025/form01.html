@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <!-- Action -> ao clicar em submit vai executar essa ação -->
+    <!-- Por padrão o Metodo é GET (ao clicar em submit os dados do formulario vão aparecer na url)
+         o POST não parece na URL, mas é possível ver o conturdo pelo inspetor de objeto do navegador
+
+        Geramente quando o formulario não tem dados sensiveis usa o GET
+        GET só pode ser enviado até 3000 bytes ( 3000 letras)
+
+        nome é importante para o relacionamento no HTML e PHP
+        id é importante para o relacionamento no label e javascript
+        -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--  No label, no for deve informar o id -->
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p>
+            <input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
